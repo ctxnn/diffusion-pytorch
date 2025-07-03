@@ -26,5 +26,5 @@ $$L = E_{x_0, \epsilon, t} \left[ \| \epsilon - \epsilon_\theta(x_t, t) \|^2 \ri
 
 3. sampling step ( ddpm )
 
-![Sampling Step](https://latex.codecogs.com/svg.latex?x_{t-1}%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B%5Calpha_t%7D%7D%20%5Cleft(%20x_t%20-%20%5Cfrac%7B%5Cbeta_t%7D%7B%5Csqrt%7B1%20-%20%5Cbar%7B%5Calpha%7D_t%7D%7D%20%5Cepsilon_%5Ctheta(x_t,%20t)%20%5Cright)%20+%20%5Csigma_t%20z)
+![Sampling Step](https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7D%20x_{t-1}%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B%5Calpha_t%7D%7D%20%5Cleft(%20x_t%20-%20%5Cfrac%7B%5Cbeta_t%7D%7B%5Csqrt%7B1%20-%20%5Cbar%7B%5Calpha%7D_t%7D%7D%20%5Cepsilon_%5Ctheta(x_t,%20t)%20%5Cright)%20%2B%20%5Csigma_t%20z)
 
