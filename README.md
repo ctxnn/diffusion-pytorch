@@ -21,7 +21,7 @@ $$q(x_t|x_0) = N(x_t; \sqrt{\bar{\alpha}}x_0,(1-\sqrt{\bar{\alpha}})I)$$
 where $\alpha_t$ = 1 - $\beta_t$ , $\bar{\alpha_t} = \prod_{s=1}^t\alpha_s$, $\beta$ is the noise
 
 2. noise prediction loss 
-$$L = \mathbb{E}_{x_0, \epsilon, t} \left[ \| \epsilon - \epsilon_\theta(x_t, t) \|^2 \right]$$
+$$L = E_{x_0, \epsilon, t} \left[ \| \epsilon - \epsilon_\theta(x_t, t) \|^2 \right]$$
 
 3. sampling step ( ddpm )
 
