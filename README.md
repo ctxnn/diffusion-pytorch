@@ -1,4 +1,4 @@
-diffusion models are the current state of the art image genration models 
+**diffusion models** are the current state of the art image genration models 
 
 it consists of two processes 
 - backward process 
@@ -15,6 +15,29 @@ diffusion models learns to find its way from a random sample in the image space,
 example: 
 <img src="img/image.png" alt="alt text" width="300"/>
 
+**training info and results**: 
+
+1. `diffusion_pytorch.ipynb` 
+
+in this file i trained a diffusion model on cifar10 dataset(only trained until 20 epochs for now: gpu poor :( ) 
+
+- demosntrated: how noise is added 
+
+![output](img/output.png)
+
+- overfitted and showed how we minimize the loss
+- results(20 epochs - they are nothing but still)
+
+![output1](img/output_diff.png)
+
+2. `diffusion_torch_deepinv`
+
+here i trained diffusion on mnist but imported the loss and unet from deepinv library and did inference too(along with sampling)
+
+- results(images sampled from the diffusion model trained):
+
+![al](img/mnist_output.png)
+
 **diffusion maths cheatsheet (that is used while programming)** 
 
 1. closed form noise sampling 
@@ -30,4 +53,7 @@ $$L = E_{x_0, \epsilon, t} \left[ \| \epsilon - \epsilon_\theta(x_t, t) \|^2 \ri
 3. sampling step ( ddpm )
 
 ![Sampling Step](https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7D%20x_{t-1}%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B%5Calpha_t%7D%7D%20%5Cleft(%20x_t%20-%20%5Cfrac%7B%5Cbeta_t%7D%7B%5Csqrt%7B1%20-%20%5Cbar%7B%5Calpha%7D_t%7D%7D%20%5Cepsilon_%5Ctheta(x_t,%20t)%20%5Cright)%20%2B%20%5Csigma_t%20z)
+
+
+
 
