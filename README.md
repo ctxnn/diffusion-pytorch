@@ -10,7 +10,10 @@ in layman terms, the **forward process** adds noice in the original data and a n
 
 if want to see visualize it in our minds imagine there is a _image_ space of 1 million pixel, and the space is mostly empty, but in that space there are clusters of good images that mean something (like cats, dogs whatever) 
 
-diffusion models learns to find its way from a random sample in the image space, to one of these clusters 
+diffusion models learns to find its way from a random sample in the image space, to one of these clusters
+
+example: 
+<img src="img/image.png" alt="alt text" width="300"/>
 
 **diffusion maths cheatsheet (that is used while programming)** 
 
